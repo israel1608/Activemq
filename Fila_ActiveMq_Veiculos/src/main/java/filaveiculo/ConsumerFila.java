@@ -70,7 +70,7 @@ public class ConsumerFila {
     
     public static void main(String[] args) throws JMSException {     
         H2ConnectionExample h2Connection = new H2ConnectionExample();
-        //h2Connection.start();  ROdar 1 vez quando a tabela Veiculo ainda não existe
+        h2Connection.start(); // ROdar 1 vez quando a tabela Veiculo ainda não existe
         while (true) {
             consumir();
           if (par != null) {
