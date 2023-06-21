@@ -44,7 +44,7 @@ public class H2ConnectionExample {
             System.out.println("Tabela veiculos criada com sucesso.");
         }
    
-        connection.close();
+        //connection.close();
         System.out.println("Conexão com o banco de dados fechada.");
         } catch (SQLException e) {
             System.out.println("Ocorreu um erro ao estabelecer a conexão com o banco de dados: " + e.getMessage());
